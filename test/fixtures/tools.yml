@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  toolid: MyString
+  tname: MyString
+  price: MyString
+  description: MyString
+
+two:
+  toolid: MyString
+  tname: MyString
+  price: MyString
+  description: MyString
