@@ -5,8 +5,8 @@
     <%= f.input :name %>
     <%= f.input :email %>
     <%= f.input :password %>
-    <%= f.input :role %>
-    <%= f.input :admin %>
+    <label>Role</label>
+    <%= f.select :role, ['Doctor', 'Vendor','Management']%>
   </div>
 
   <div class="form-actions">
