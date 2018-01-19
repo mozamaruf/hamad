@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy,:make_admin]
   skip_before_action :authenticate, only: [:new, :create]
-  before_action :admin_only, only: [:new, :make_admin]
+  before_action :admin_only, only: [:make_admin]
 
   # GET /users
   # GET /users.json
@@ -74,7 +74,7 @@ class UsersController < ApplicationController
    def admin_only
       if !current_user.admin?
         redirect_to root_path
-end 
+  end 
 end
 
   private

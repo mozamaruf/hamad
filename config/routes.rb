@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   get 'sessions/destroy'
 
 
-  root to: 'searches#index'
+  root to: 'visitors#index'
     resources :users do
       get :make_admin, on: :member
   end
