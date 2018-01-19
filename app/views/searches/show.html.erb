@@ -11,10 +11,12 @@
 	<br>
 
 	<div class ="div">
-		<h1><%= c.name %></h1>
+		<h3><%= c.name %></h3>
+		<p><%= image_tag c.image.url(:thumb) %></p>
 		<p>Price: Qr.<%= c.price %></p>
 		<p>Location: <%= c.location %></p>
 		<p>Description: <%= c.description %></p>
+		<p><%= link_to 'Details', c %></p>
 	</div>
 
 	<% end %>

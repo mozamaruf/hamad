@@ -27,6 +27,7 @@
         <td><%= stuff.price %></td>
         <td><%= stuff.location %></td>
         <td><%= stuff.description %></td>
+        <td><%= image_tag stuff.image.url(:thumb) %></td>
         <td><%= link_to 'Show', stuff %></td>
         <td><%= link_to 'Edit', edit_stuff_path(stuff) %></td>
         <td><%= link_to 'Destroy', stuff, method: :delete, data: { confirm: 'Are you sure?' } %></td>

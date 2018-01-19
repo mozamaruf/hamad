@@ -40,3 +40,4 @@ end
 group :production do
   gem 'pg'
 end
+gem "paperclip", "~> 5.0.0"
