@@ -4,7 +4,7 @@ class StuffsController < ApplicationController
   # GET /stuffs
   # GET /stuffs.json
   def index
-    @stuffs = Stuff.where(["name LIKE ?","%#{params[:search]}%"])
+    @stuffs = Stuff.search(params[:search])
   end
 
   # GET /stuffs/1
