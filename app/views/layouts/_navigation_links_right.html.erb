@@ -1,5 +1,6 @@
 <% if logged_in? %>
-<li><font color="white"><%= @current_user.name %></font></li>
+<li style="margin-top: 13px; margin-right: 10px;"><font color="grey"><%= @current_user.role %></font></li>
+<li style="margin-top: 13px;"><font color="white"><%= @current_user.name %></font></li>
 <li><%= link_to 'Logout', logout_path, method:
 :delete%></li>
 <% else %>

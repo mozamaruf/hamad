@@ -1,15 +1,30 @@
-
-<h2>Stuffs</h2>
-
-
-<%= form_tag stuffs_path, :method => 'get' do %>
-<%= text_field_tag :search, params[:search], class: 'speech-input' %>
-<%= submit_tag "Search" %>
-<% end %>
-
-
-
-
+<header class="masthead text-white text-center">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <h1 class="mb-5" style="margin-left: 15%;">Search for a Device</h1>
+          </div>
+          <div class="col-md-10 col-lg-8 col-xl-7" style="margin-left: 27%;">
+            <div class="row">
+                <div class="col-12 col-md-9 mb-2 mb-md-0">
+					<%= form_tag stuffs_path, :method => 'get' do %>
+					<%= text_field_tag :search, params[:search], class: 'speech-input' %>
+                </div>
+            </div>
+        	<div class="row" style="margin-left: 10%;">
+                <div class="col-12 col-md-3">
+                  <%= submit_tag "Search", class: 'btn btn-block btn-lg btn-primary' %>
+				  <% end %>
+				</div>
+			    <div class="col-12 col-md-3">
+				  <%= link_to "Advanced Search", new_search_path, class: 'btn btn-block2 btn-lg btn-primary2' %>
+                </div>
+        	</div>
+          </div>
+        </div>
+      </div>
+    </header>
 
 <script type="text/javascript">
 /*global webkitSpeechRecognition */
@@ -184,4 +199,3 @@
 
 </script>
 
-<%= link_to "Advanced Search", new_search_path %>

@@ -1,6 +1,8 @@
 .si-wrapper {
 	display: inline-block;
 	position: relative;
+	width: 400px;
+    margin-left: 15%;
 }
 
 .speech-input {
