@@ -1,17 +1,3 @@
-
-<h2>Stuffs</h2>
-
-
-<%= form_tag stuffs_path, :method => 'get' do %>
-<%= text_field_tag :search, params[:search], class: 'speech-input' %>
-<%= submit_tag "Search" %>
-<% end %>
-
-
-
-
-
-<script type="text/javascript">
 /*global webkitSpeechRecognition */
 (function() {
 	'use strict';
@@ -181,7 +167,3 @@
 		}, false);
 	});
 })();
-
-</script>
-
-<%= link_to "Advanced Search", new_search_path %>
