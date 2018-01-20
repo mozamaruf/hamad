@@ -1,6 +1,7 @@
 class StuffsController < ApplicationController
   before_action :set_stuff, only: [:show, :edit, :update, :destroy]
 
+
   # GET /stuffs
   # GET /stuffs.json
   def index
@@ -68,6 +69,7 @@ class StuffsController < ApplicationController
         redirect_to root_path
         end
       end
+
     # Use callbacks to share common setup or constraints between actions.
     def set_stuff
       @stuff = Stuff.find(params[:id])
